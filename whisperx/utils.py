@@ -221,9 +221,9 @@ class SubtitlesWriter(ResultWriter):
     decimal_marker: str
 
     def iterate_result(self, result: dict, options: dict):
-        raw_max_line_width: Optional[int] = options["max_line_width"]
-        max_line_count: Optional[int] = options["max_line_count"]
-        highlight_words: bool = options["highlight_words"]
+        raw_max_line_width: Optional[int] = options.get("max_line_width")
+        max_line_count: Optional[int] = options.get("max_line_count")
+        highlight_words: bool = options.get("highlight_words")
         max_line_width = 1000 if raw_max_line_width is None else raw_max_line_width
         preserve_segments = max_line_count is None or raw_max_line_width is None
         

@@ -1,37 +1,8 @@
-<h1 align="center">WhisperX</h1>
+## forked from [whisperX](https://github.com/m-bain/whisperX)
 
-<p align="center">
-  <a href="https://github.com/m-bain/whisperX/stargazers">
-    <img src="https://img.shields.io/github/stars/m-bain/whisperX.svg?colorA=orange&colorB=orange&logo=github"
-         alt="GitHub stars">
-  </a>
-  <a href="https://github.com/m-bain/whisperX/issues">
-        <img src="https://img.shields.io/github/issues/m-bain/whisperx.svg"
-             alt="GitHub issues">
-  </a>
-  <a href="https://github.com/m-bain/whisperX/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/m-bain/whisperX.svg"
-             alt="GitHub license">
-  </a>
-  <a href="https://arxiv.org/abs/2303.00747">
-        <img src="http://img.shields.io/badge/Arxiv-2303.00747-B31B1B.svg"
-             alt="ArXiv paper">
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fgithub.com%2Fm-bain%2FwhisperX">
-  <img src="https://img.shields.io/twitter/url/https/github.com/m-bain/whisperX.svg?style=social" alt="Twitter">
-  </a>      
-</p>
+Replace vad model, use [silero_vad](https://github.com/snakers4/silero-vad/) instead. Remove alignment model, just use vad segments for transcription.
 
-
-<img width="1216" align="center" alt="whisperx-arch" src="figures/pipeline.png">
-
-
-<!-- <p align="left">Whisper-Based Automatic Speech Recognition (ASR) with improved timestamp accuracy + quality via forced phoneme alignment and voice-activity based batching for fast inference.</p> -->
-
-
-<!-- <h2 align="left", id="what-is-it">What is it 🔎</h2> -->
-
-
+# original docs
 This repository provides fast automatic speech recognition (70x realtime with large-v2) with word-level timestamps and speaker diarization.
 
 - ⚡️ Batched inference for 70x realtime transcription using whisper large-v2
